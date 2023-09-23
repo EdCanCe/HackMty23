@@ -8,4 +8,4 @@ with open("style.css") as f:
     st.write("BLa blablablalbala")
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
     st.write("hello world".format(f.read()))
-    st.write("bye world")
+    st.write("bye ola")
