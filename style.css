@@ -11,3 +11,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
+h1 {
+    font-weight: bold;
+}
