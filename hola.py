@@ -7,3 +7,6 @@ Hello *world!*
 aaa que miedo
 pipipi :c
 """)
+
+for i in range(10):
+    st.write("am hola")
