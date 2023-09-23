@@ -8,3 +8,5 @@ st.write("BLa blablablalbala")
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+    st.write("hello world")
+    st.write("bye world")
