@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title= "takatakata's Hackathon Proyect", layout= "wide")    
+st.set_page_config(page_title= "tak Coach de inversión", layout= "wide")    
 
 with open("style.css") as f:
     st.header("Hola")
