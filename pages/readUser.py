@@ -1,12 +1,13 @@
 import streamlit as st
 
-st.set_page_config(page_title= "takatakata's Hackathon Proyect", layout= "wide")    
+st.set_page_config(
+    page_title= "takatakata's Hackathon Proyect"
+) 
 
-with open("style.css") as f:
-    st.markdown("<style>.header{border: green;}</style>", unsafe_allow_html=True)
-    st.header("Hola")
-    st.title("Presentacion")
-    st.write("BLa blablablalbala")
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-    st.write("hello world".format(f.read()))
-    st.write("bye ola")
+st.markdown('''# COACH DE ASISTENCIA
+## El proyecto fue elaborado por:
+ - Mario Feng Wu
+ - Gael Cumplido
+ - Edgar Andrey
+ - Edmundo Canedo
+                ''')
