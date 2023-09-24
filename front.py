@@ -43,4 +43,4 @@ with st.container():
 ......
 """)
     with right_column:
-        st_lottie(lottie_coding, height 300, key "coding")
+        st_lottie(lottie_coding, height = 300, key = "coding")
