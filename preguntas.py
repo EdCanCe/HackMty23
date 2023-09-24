@@ -69,7 +69,7 @@ if(st.button("Continuar")):
     st.write(IngAnual)
     st.write(InvAnual)
     st.write(metaInversion)
-    if "Otro" != "":
-        metaInversion = metaInversion + OtroMeta
+    if "Otro" in metaInversion:
+        st.write(OtroMeta)
     st.write(Necesidades)
     st.write(Gustos)
