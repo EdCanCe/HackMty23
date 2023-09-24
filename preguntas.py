@@ -13,10 +13,16 @@ st.text_input("Dirección actual")
 st.number_input("¿Cuánto dinero ganas?") # Para insertar numero
 
 # Preguntas de opción múltiple
-ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], index = None, horizontal = True)
+ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", 
+                             ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], 
+                             index = None, horizontal = True,
+                             )
 st.text("Tu objetivo principal es:", ObjetivoPrincipal)
 
-Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?", ["Bajo", "Moderado", "Alto"], index = None, horizontal = True)
+Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?",
+                   ["Bajo", "Moderado", "Alto"], 
+                   index = None, horizontal = True,
+                   )
 st.text("El nivel de riego que seleccionaste fue:", Riesgo)
 st.number_input("¿Cuánto es su ingreso mensual?")
 st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
