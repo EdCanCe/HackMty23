@@ -16,13 +16,18 @@ lottie_coding = load_lottieurl("https://lottie.host/53acdb1a-30ec-4187-91bd-a757
 
 #Seccion Header
 with st.container():
-    image_Tec, image_Banorte, image_HackMTY  = st.columns((2, 3 , 2))
+    image_Tec, image_HackMTY  = st.columns((1, 3 , 1))
     with image_Tec: 
-        st.image("https://gershenson.mx/wp-content/uploads/2020/08/logo-tec-de-monterrey-e1484853084274.png")
+        st.image("https://citris-uc.org/wp-content/uploads/2019/10/Tec-de-Monterrey-logo-horizontal-blue.png", width = 200)
     with image_HackMTY:     
-        st.image("https://th.bing.com/th/id/OIP.bD70SkJLNjIoODY7YK_VnAHaFE?pid=ImgDet&rs=1")
+        st.image("https://th.bing.com/th/id/OIP.bD70SkJLNjIoODY7YK_VnAHaFE?pid=ImgDet&rs=1", width = 200)
+    text_column1, image_Banorte, text_column3  = st.columns((1, 3, 1))
+    with text_column1:
+        st.text("") 
     with image_Banorte:
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png", width = 500)
+        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png", width = 200)
+    with text_column3:
+        st.text("") 
     st.title("Presentacion")
     st.write("BLa blablablalbala")
     st.write("hello world")
