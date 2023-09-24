@@ -65,7 +65,7 @@ if(st.button("Continuar")):
     st.write(ObjetivoPrincipal)
     st.write(Riesgo)
     st.write(IngMensual)
-    st.write(IngMensual)
+    st.write(InvMensual)
     st.write(IngAnual)
     st.write(InvAnual)
     st.write(metaInversion)
@@ -73,3 +73,5 @@ if(st.button("Continuar")):
         st.write(OtroMeta)
     st.write(Necesidades)
     st.write(Gustos)
+
+    db.agregar_datos(N_oficial, Nombre, Apellido, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos)
