@@ -12,8 +12,8 @@ st.text_input("Dirección actual")
 
 st.number_input("¿Cuánto dinero ganas?")
 
-st.text("¿Su objetivo principal de inversión es a ?")
-st.radio(["corto plazo (1-3 años)", "mediano plazo (3-5 años)" , "largo plazo (más de 5 años)"])
+st.radio('Pick one:', ['nose','ear'])
 
-st.text(["¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?"])
-st.radio("bajo", "moderado", "alto")
+st.radio("¿Su objetivo principal de inversión es a ?", ["corto plazo (1-3 años)", "mediano plazo (3-5 años)" , "largo plazo (más de 5 años)"])
+
+st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?", ["bajo", "moderado", "alto"])
