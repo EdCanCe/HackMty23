@@ -4,9 +4,8 @@ d = pd.read_excel("New.xlsx")
 df = pd.DataFrame(d)
 print(df)
 
-
-    
-"""IDINE = ["C13"]
+def crear():
+    """IDINE = ["C13"]
 username = ["Mario"]
 lastname = ["Feng Wu"]
 useradress = ["Tec de Monterrey"]
@@ -23,8 +22,7 @@ df["Useradress"] = useradress
 df["UserOpen"] = useropen
 df["UserTime"] = usertime
 df["Userisk"] = userisk
-
-print(df)
+    print(df)
 """
 df.to_excel("C:\\Users\\gaelm\\Desktop\\Data.xlsx")
 
