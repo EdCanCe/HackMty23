@@ -1,6 +1,5 @@
 import streamlit as st
 import DataBase as db
-
 st.set_page_config(page_title= "Datos del usuario", layout= "wide")
 
 st.text_input("Nombre(s)") # Para insertar texto
@@ -25,7 +24,7 @@ Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inver
                    ["Bajo", "Moderado", "Alto"], 
                    index = None, horizontal = True,
 )
-st.write("El nivel de riego que seleccionaste fue:", Riesgo)
+st.write("El nivel de riesgo que seleccionaste fue:", Riesgo)
 
 st.number_input("¿Cuánto es su ingreso mensual?")
 st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
