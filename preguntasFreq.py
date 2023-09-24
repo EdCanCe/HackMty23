@@ -27,7 +27,7 @@ st.text_area("Crecimiento:"," Busca el incremento de tu patrimonio con la "
              "tranquilidad de que estás en buenas manos con una amplia oferta. ")
 st.text_area("Experiencia: ","Contarás con asesoría personalizada y recibirás toda " 
              "la información necesaria para que puedas tomar la mejor decisión de inversión para ti.")
-st.text_area("Diversificación: ",": Podrás diversificar tu dinero de acuerdo con la estrategia de cada Fondo,  "
+st.text_area("Diversificación: ","Podrás diversificar tu dinero de acuerdo con la estrategia de cada Fondo, "
              "así minimizas el riesgo e incertidumbre")
 st.text_area("Flexibilidad: ","Encontrarás diferentes opciones que se acomoden a tus necesidades y objetivos.")
 
