@@ -1,5 +1,11 @@
 import pandas as pd
 
+def check_user(df, IDINE):
+    if IDINE in df["IDINE"]:
+        return True
+    return False
+
+
 data = {'IDINE': [], 'username': [], 'userlast': [], 'useradress': [], 'usertime': [], 'userisk': [], 'usermensual' : [], 'invemensual' : [], 'ingranual' : [], 'inveanual' : [], 'metainver' : [], 'otrameta' : [], 'necesidad' : [], 'gustos' : []}
 df = pd.DataFrame(data)
 
@@ -11,3 +17,4 @@ def agregar_datos(IDINE, username, userlast, useradress, usertime, userisk, user
     df = pd.concat([df, nueva_data], ignore_index=True)
     df.to_csv('datos.csv', index=False)
     df.to_excel("New.xlsx")
+    
