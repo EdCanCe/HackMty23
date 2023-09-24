@@ -16,7 +16,7 @@ lottie_coding = load_lottieurl("https://lottie.host/53acdb1a-30ec-4187-91bd-a757
 
 #Seccion Header
 with st.container():
-    image_Tec, image_Banorte, image_HackMTY  = st.columns((1, 3 , 1))
+    image_Tec, image_Banorte, image_HackMTY  = st.columns((2, 3 , 2))
     with image_Tec: 
         st.image("https://gershenson.mx/wp-content/uploads/2020/08/logo-tec-de-monterrey-e1484853084274.png")
     with image_HackMTY:     
