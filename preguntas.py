@@ -46,7 +46,9 @@ metaInversion = st.multiselect("¿Cuáles son tus metas de inversión?", ["Casa"
 
 if "Otro" in metaInversion:
     OtroMeta = st.text_input('Ingresa los otros')
-    
+else:
+    OtroMeta = ""   
+
 
 # Compras
 
