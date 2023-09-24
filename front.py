@@ -32,6 +32,7 @@ with st.container():
         st.text("") 
     sticker_lottie, text_column4, text_column5 = st.columns((2,1, 1))
     with sticker_lottie:
+        st.write("---")
         st_lottie(lottie_coding, height = 300, key = "coding")
     with text_column4:
         st.text("") 
