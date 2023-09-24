@@ -4,7 +4,7 @@ st.set_page_config(page_title= "Preguntas frecuentes", layout= "wide")
 st.title('Preguntas frecuentes en Banorte')
 
 st.subheader("¿Qué es un fondo de inversión?")
-st.text("**Fondos de Inversión**")
+st.markdown("**Fondos de Inversión**")
 st.text_area("","Son una excelente forma para obtener rendimientos"
             "de tus ahorros. Su funció principal es captar, invertir y administrar los recursos"
             "de clientes como tú para invertirlos en distintos instrumentos financieros"
@@ -13,7 +13,7 @@ st.text_area("","Son una excelente forma para obtener rendimientos"
             "no puede hacerlo de manera individual")
 
 st.subheader("¿Cómo puedo empezar a invertir en un fondo?")
-st.text("**Invertir en un fondo**")
+st.markdown("**Invertir en un fondo**")
 st.text_area("","Solo tienes que elegir el o los Fondos que te más te interesen"
             "De acuerdo a tu elección irás recibiendo rendimientos, que son resultado de la rentabilidad"
             "o ganancia de los activos en los que invirtió el Fondo que elegiste"
@@ -22,7 +22,7 @@ st.text_area("","Solo tienes que elegir el o los Fondos que te más te interesen
             "no puede hacerlo de manera individual")
 
 st.subheader("¿Por qué invertir en Banorte?")
-st.text("**Banorte brinda**")
+st.markdown("**Banorte brinda**")
 st.text_area("","Crecimiento: Busca el incremento de tu patrimonio con la" 
              "tranquilidad de que estás en buenas manos con una amplia oferta. ")
 st.text_area("","Experiencia: Contarás con asesoría personalizada y recibirás toda" 
