@@ -1,22 +1,19 @@
 import pandas as pd
 
-# Crear un DataFrame vacío
 data = {'Nombre': [], 'Edad': [], 'Ciudad': []}
 df = pd.DataFrame(data)
 
-# Función para agregar datos
 def agregar_datos():
+    global df
     nombre = input("Ingresa el nombre: ")
     edad = int(input("Ingresa la edad: "))
     ciudad = input("Ingresa la ciudad: ")
 
-    # Agregar datos al DataFrame
     nueva_fila = {'Nombre': nombre, 'Edad': edad, 'Ciudad': ciudad}
-    df = df.append(nueva_fila, ignore_index=True)
-
+    df = df.loc[0:]  # Añade esta línea para crear una copia del DataFrame
+    df += pd.DataFrame([nueva_fila], columns=df.columns)
     return df
 
-# Loop para agregar datos
 while True:
     respuesta = input("¿Deseas agregar datos? (s/n): ")
     if respuesta.lower() == 's':
@@ -26,8 +23,13 @@ while True:
     else:
         break
 
-# Al final, puedes guardar el DataFrame en un archivo si lo deseas
 df.to_csv('datos.csv', index=False)
+
+
+
+
+
+
 
 
 #d = pd.read_excel("New.xlsx")
