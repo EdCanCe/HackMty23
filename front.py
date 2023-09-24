@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title= "tak Coach de inversión", layout= "wide")    
 
 with st.container():
-    image_column = st.columns((1,2))
+    image_column = st.columns((1))
     with image_column: 
         st.image("https://citris-uc.org/wp-content/uploads/2019/10/Tec-de-Monterrey-logo-horizontal-blue.png")
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png")
