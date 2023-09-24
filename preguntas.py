@@ -10,8 +10,6 @@ st.text_input("Número de identificación oficial")
 
 st.text_input("Dirección actual")
 
-st.number_input("¿Cuánto dinero ganas?") # Para insertar numero
-
 # Preguntas de opción múltiple
 
 ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", 
@@ -38,3 +36,9 @@ st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su cali
 metaInversion = st.multiselect("¿Cuáles son tus metas de inversión?", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
 if "Otro" in metaInversion:
     st.text_input('Ingresa los otros')
+
+# Compras
+
+st.number_input("¿Cuánto gastas en necesidades (comida, servicios básico, agua, entre otros) al mes?")
+
+st.number_input("¿Cuánto gastas en gustos (compras de impulso, innecesarios, vicios, entre otros) al mes?")
