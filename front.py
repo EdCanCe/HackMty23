@@ -22,7 +22,7 @@ with st.container():
     with image_HackMTY:     
         st.image("https://th.bing.com/th/id/OIP.bD70SkJLNjIoODY7YK_VnAHaFE?pid=ImgDet&rs=1")
     with image_Banorte:
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png")
+        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png", width = 500)
     st.title("Presentacion")
     st.write("BLa blablablalbala")
     st.write("hello world")
