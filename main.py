@@ -31,9 +31,10 @@ def genFooter():
     st.markdown('''---
 ## El proyecto fue elaborado por:
  - Mario Feng Wu
- - Gael Cumplido
- - Edgar Andrey
- - Edmundo Canedo
+ - Gael Cumplido Mendoza
+ - Edgar Andrey Balvaneda Castillón
+ - Edmundo Canedo Cervantes
+Estudiantes del Tecnológico de Monterrey Campus Guadalajara
 ''')
     
 def redirect(text, pid, sk):
@@ -120,6 +121,9 @@ if(st.session_state.page == 0): #Página de inicio
         #Seccion Header 
         hpct=st.container()
         with hpct:
+            redirect("Iniciar Sesión", 3, "hbis")
+            redirect("Crear Cuenta", 4, "hbcc")
+            st.markdown("---")
             with st.container():
                 image_Tec, image_HackMTY  = st.columns((7, 3))
             with image_Tec: 
@@ -141,7 +145,6 @@ if(st.session_state.page == 0): #Página de inicio
                 st.text("") 
             with text_column5:
                 st.text("") 
-            redirect("Pasar página", 1, "hba")
             genFooter()
 
 if(st.session_state.page == 1): #Página de captura de 
@@ -158,8 +161,6 @@ if(st.session_state.page == 1): #Página de captura de
         #
         redirect("Volver", varAux.auxPage, "dtgb")
         genFooter()
-
-print(st.session_state.page, varAux.auxPage)
 
 if(st.session_state.page == 2): #Página de las FAQ
     st.session_state.page=varAux.auxPage
