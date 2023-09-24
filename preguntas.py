@@ -17,10 +17,10 @@ st.radio("¿Su objetivo principal de inversión es a ?", ["Corto plazo (1-3 año
 
 st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?", ["Bajo", "Moderado", "Alto"])
 
-st.number_input("¿Cuánto es su ingreso mensual"?)
+st.number_input("¿Cuánto es su ingreso mensual?")
 st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
 
-st.number_input("¿Cuánto es su ingreso mensual"?)
+st.number_input("¿Cuánto es su ingreso mensual?")
 st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
 
 # Preguntas de varias opciones
