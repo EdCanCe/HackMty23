@@ -6,13 +6,13 @@ st.text("Nombre(s)")
 st.text_input("")
 
 st.text("Apellido(s)")
-st.text_input("")
+st.text_input("a")
 
 st.text("Número de identificación oficial")
-st.text_input("")
+st.text_input("b")
 
 st.text("Dirección actual")
-st.text_input("")
+st.text_input("c")
 
 st.text("¿Cuánto dinero ganas?")
 st.number_input("")
