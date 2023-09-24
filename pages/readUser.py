@@ -25,6 +25,7 @@ def genFooter():
 if(st.session_state.page == 0):
     with placeholder.container():
         genHeader()
+
         if(st.button("Pasa página")):
             st.session_state.page+=1
         genFooter()
