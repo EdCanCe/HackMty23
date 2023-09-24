@@ -13,6 +13,14 @@ st.text_input("Dirección actual")
 st.number_input("¿Cuánto dinero ganas?") # Para insertar numero
 
 # Preguntas de opción múltiple
+genre = st.radio(
+    "What's your favorite movie genre",
+    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    index=None,
+)
+
+st.write("You selected:", genre)
+
 ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", 
                              ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], 
                              index = None, horizontal = True,
