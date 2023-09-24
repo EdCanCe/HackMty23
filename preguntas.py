@@ -24,4 +24,5 @@ st.number_input("¿Cuánto es su ingreso anual?")
 st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
 
 # Preguntas de varias opciones
-print(st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Otro",]))
+st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia"])
+st.text_input('Otros')
