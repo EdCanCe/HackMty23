@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 import varAux
 import DataBase as db
+btn = False
+
 st.set_page_config(
     page_title= "takatakata's Hackathon Proyect"
 )
@@ -18,6 +20,15 @@ def load_lottieurl(url):
     if r.status_code != 200:
         return None
     return r.json()
+
+
+def createAux(N_oficial, Nombre, Apellido, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos):
+    if(db.agregar_datos(N_oficial, Nombre, Apellido, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos) == 1):
+        st.write("YA EXISTE LA CUENTA")
+    else:
+        varAux.auxPage = 4
+        st.session_state.page = 4
+
 
 #------Agregar valores-------
 lottie_coding = load_lottieurl("https://lottie.host/53acdb1a-30ec-4187-91bd-a757253236f2/9DMM2U7ryH.json")
@@ -119,6 +130,8 @@ header{
 if(st.session_state.page == 0): #Página de inicio
     with placeholder.container():
         genHeader()
+        st.subheader("Bienvenido!")
+
         #Seccion Header 
         redirect("Iniciar Sesión", 3, "hbis")
         redirect("Crear Cuenta", 1, "hbcc")
@@ -153,77 +166,75 @@ if(st.session_state.page == 1): #Página de captura de
     with placeholder.container():
         genHeader()
         st.subheader("Crear Cuenta")
-        Nombre = st.text_input("Nombre(s)") # Para insertar texto
+
+        with st.form("Create-Account"):
+
+            Nombre = st.text_input("Nombre(s)") # Para insertar texto
+            Nombre.title()
 
 
-        Apellido = st.text_input("Apellido(s)")
+            Apellido = st.text_input("Apellido(s)")
 
 
-        N_oficial = st.text_input("Número de identificación oficial")
+            N_oficial = st.text_input("Número de identificación oficial")
 
 
-        Direccion = st.text_input("Dirección actual")
-        st.write("Tu Dirección actual es: ", Direccion)
+            Direccion = st.text_input("Dirección actual")
+            st.write("Tu Dirección actual es: ", Direccion)
 
-        # Preguntas de opción múltiple
+            # Preguntas de opción múltiple
 
-        ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", 
-                                    ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], 
-                                    index = None, horizontal = True,
-        )
-
-
-        Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?",
-                        ["Bajo", "Moderado", "Alto"], 
-                        index = None, horizontal = True,
-        )
+            ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", 
+                                        ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], 
+                                        index = None, horizontal = True,
+            )
 
 
-        IngMensual = st.number_input("¿Cuánto es su ingreso mensual?")
+            Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?",
+                            ["Bajo", "Moderado", "Alto"], 
+                            index = None, horizontal = True,
+            )
 
 
-        InvMensual = st.number_input("¿Cuánto dinero planeas invertir mensualmente sin afectar tu calidad de vida actual?")
+            IngMensual = st.number_input("¿Cuánto es su ingreso mensual?")
 
 
-        IngAnual = st.number_input("¿Cuánto es su ingreso anual?")
+            InvMensual = st.number_input("¿Cuánto dinero planeas invertir mensualmente sin afectar tu calidad de vida actual?")
 
 
-        InvAnual = st.number_input("¿Cuánto dinero planeas invertir anualmente sin afectar tu calidad de vida actual?")
+            IngAnual = st.number_input("¿Cuánto es su ingreso anual?")
 
 
-        # Preguntas de varias opciones
-
-        metaInversion = st.multiselect("¿Cuáles son tus metas de inversión?", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
-
-        if "Otro" in metaInversion:
-            OtroMeta = st.text_input('Ingresa los otros')
-        else:
-            OtroMeta = ""   
+            InvAnual = st.number_input("¿Cuánto dinero planeas invertir anualmente sin afectar tu calidad de vida actual?")
 
 
-        # Compras
+            # Preguntas de varias opciones
 
-        Necesidades = st.number_input("¿Cuánto gastas en necesidades (comida, servicios básico, agua, entre otros) al mes?")
+            metaInversion = st.multiselect("¿Cuáles son tus metas de inversión?", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
 
-
-        Gustos = st.number_input("¿Cuánto gastas en gustos (compras de impulso, innecesarios, vicios, entre otros) al mes?")
-
-
-        if(st.button("Continuar")):
-            st.write(Nombre)
-            st.write(Apellido)
-            st.write(N_oficial)
-            st.write(ObjetivoPrincipal)
-            st.write(Riesgo)
-            st.write(IngMensual)
-            st.write(IngMensual)
-            st.write(IngAnual)
-            st.write(InvAnual)
-            st.write(metaInversion)
             if "Otro" in metaInversion:
-                st.write(OtroMeta)
-            st.write(Necesidades)
-            st.write(Gustos)
+                OtroMeta = st.text_input('Ingresa los otros')
+            else:
+                OtroMeta = ""   
+
+
+            # Compras
+
+            Necesidades = st.number_input("¿Cuánto gastas en necesidades (comida, servicios básico, agua, entre otros) al mes?")
+
+
+            Gustos = st.number_input("¿Cuánto gastas en gustos (compras de impulso, innecesarios, vicios, entre otros) al mes?")
+
+            btn = st.form_submit_button("Continuar")
+
+        if(btn):
+            print("se mete a la positiva")
+            if(db.agregar_datos(N_oficial, Nombre, Apellido, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos) == 1):
+                st.write("YA EXISTE LA CUENTA")
+            else:
+                st.write("Iniciando sesión")
+
+
         redirect("Volver", varAux.auxPage, "dtgb")
         genFooter()
 
@@ -232,6 +243,8 @@ if(st.session_state.page == 2): #Página de las FAQ
     with placeholder.container():
         genHeader()
         redirect("Volver", varAux.auxPage, "faqgb1")
+
+
         
         redirect("Volver", varAux.auxPage, "faqgb2")
         genFooter()
@@ -245,7 +258,7 @@ if(st.session_state.page == 3): #Página de inicio de sesión
         redirect("Iniciar sesión", 4, "isb")
         genFooter()
 
-if(st.session_state.page == 2): #Página de usuario
+if(st.session_state.page == 4): #Página de usuario
     st.session_state.page=varAux.auxPage
     with placeholder.container():
         genHeader()

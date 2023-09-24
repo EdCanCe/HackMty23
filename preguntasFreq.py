@@ -27,16 +27,16 @@ st.text_area("Crecimiento:"," Busca el incremento de tu patrimonio con la "
 st.text_area("Experiencia: ","Contarás con asesoría personalizada y recibirás toda " 
              "la información necesaria para que puedas tomar la mejor decisión de inversión para ti.")
 st.text_area("Diversificación: ","Podrás diversificar tu dinero de acuerdo con la estrategia de cada Fondo, "
-             "así minimizas el riesgo e incertidumbre")
-st.text_area("Flexibilidad: ","Encontrarás diferentes opciones que se acomoden a tus necesidades y objetivos.")
+             "así minimizas el varAux.Riesgo e incertidumbre")
+st.text_area("Flexibilidad: ","Encontrarás diferentes opciones que se acomoden a tus varAux.Necesidades y objetivos.")
 
 st.subheader("¿A partir de cuánto dinero puedo empezar a invertir?")
 st.text_area("A partir de $100 pesos ","La inversión inicial es dependiendo del Fondo a contratar y en cualquier "
             "momento puedes incrementarlo para generar mayores ganancias.")
 
-st.subheader("¿Existe algún riesgo de perder parte de mi inversión en Fondos?")
-st.text_area("Todas las inversiones tienen riesgo asociado", "Puede ser desde extremadamente bajo hasta alto, "
-            "en general los Fondos con menor rendimiento esperado tienen menor riesgo " 
+st.subheader("¿Existe algún varAux.Riesgo de perder parte de mi inversión en Fondos?")
+st.text_area("Todas las inversiones tienen varAux.Riesgo asociado", "Puede ser desde extremadamente bajo hasta alto, "
+            "en general los Fondos con menor rendimiento esperado tienen menor varAux.Riesgo " 
             "y viceversa. Depende directamente del tipo de activos que conforman la cartera del Fondo")
 
 st.subheader("¿Mis rendimientos generan algún tipo de impuesto?")
