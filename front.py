@@ -29,7 +29,15 @@ with st.container():
     with image_Banorte:
         st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png")
     with text_column3:
+        st.text("") 
+    sticker_lottie, text_column4, text_column5 = st.columns((2,1, 1))
+    with sticker_lottie:
+        st.write("---")
         st_lottie(lottie_coding, height = 300, key = "coding")
+    with text_column4:
+        st.text("") 
+    with text_column5:
+        st.text("") 
 
 with st.container():
     st.write("---")
