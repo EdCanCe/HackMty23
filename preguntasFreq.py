@@ -50,10 +50,15 @@ st.text_area("Sí","Tu contrato de Fondos te permite invertir en todos los Fondo
             "Es recomendable diversificar entre corto, mediano y largo plazo.")
 
 st.subheader("¿Por cuánto tiempo debo de mantener mi inversión?")
-st.text_area("Una ventaja de los Fondos es que no hay un plazo o tiempo obligado, sin embargo, "
+st.text_area("No hay tiempo límite","Una ventaja de los Fondos es que no hay un plazo o tiempo obligado, sin embargo, "
             "existe un tiempo recomendado llamado horizonte de inversión, "
             "para mantener lo invertido y así lograr optimizar los rendimientos.")
 
 st.subheader("¿Qué tipo de Fondos existen?")
-st.text_area("Existen varios: " "Fondos de Deuda, de Renta Variable, "
+st.text_area("Existen varios: ", "Fondos de Deuda, de Renta Variable, "
              "Mixtos (Renta Fija y Variable), de Cobertura, entre otros.")
+
+st.subheader("¿Cómo se determina el rendimiento de un Fondo?")
+st.text_area("Por la rentabilidad o ganancia","El rendimiento de un Fondo de inversión es consecuencia de la rentabilidad o ganancia "
+             "que proporcione cada uno de los activos que componen su cartera. "
+             "Se calcula con el diferencial de precio de venta vs. precio de compra.")
