@@ -5,7 +5,7 @@ st.title('Preguntas frecuentes en Banorte')
 
 st.subheader("¿Qué es un fondo de inversión?")
 st.markdown("**Fondos de Inversión**")
-st.text_area("","Son una excelente forma para obtener rendimientos"
+st.text_area("---","Son una excelente forma para obtener rendimientos"
             "de tus ahorros. Su funció principal es captar, invertir y administrar los recursos"
             "de clientes como tú para invertirlos en distintos instrumentos financieros"
             "y ponerlos a tu alcance. Funcionan como una sociedad que reúne el ahorro de varias"
