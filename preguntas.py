@@ -20,7 +20,7 @@ st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?",
 st.number_input("¿Cuánto es su ingreso mensual?")
 st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
 
-st.number_input("¿Cuánto es su ingreso mensual?")
+st.number_input("¿Cuánto es su ingreso anual?")
 st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
 
 # Preguntas de varias opciones
