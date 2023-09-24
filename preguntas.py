@@ -1,5 +1,5 @@
 import streamlit as st
-#import DataBase as db
+
 st.set_page_config(page_title= "Datos del usuario", layout= "wide")
 
 st.text_input("Nombre(s)") # Para insertar texto
@@ -32,7 +32,9 @@ st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su ca
 st.number_input("¿Cuánto es su ingreso anual?")
 st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
 
+
 # Preguntas de varias opciones
-metaInversion = st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
+
+metaInversion = st.multiselect("¿Cuáles son tus metas de inversión?", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
 if "Otro" in metaInversion:
     st.text_input('Ingresa los otros')
