@@ -27,7 +27,6 @@ def redirect(text, pid):
     if(st.button(text)):
         varAux.auxPage = pid
         st.session_state.page=pid
-
     
 if st.button("FAQ", type="primary"):
     st.session_state.page=2
@@ -69,7 +68,7 @@ st.markdown(
 if(st.session_state.page == 0): #Página de inicio
     with placeholder.container():
         genHeader()
-
+        #AQUÍ VA SU PÁGINAAA
         redirect("Pasar página", 1)
         genFooter()
 
@@ -86,12 +85,16 @@ if(st.session_state.page == 1): #Página de captura de datos
         #
         genFooter()
 
+print(st.session_state.page, varAux.auxPage)
+
 if(st.session_state.page == 2): #Página de las FAQ
     with placeholder.container():
+        #print("Aqui")
         genHeader()
         st.markdown('''## Frecuently asked questions
     ''')
-        st.write(varAux.auxPage)
         if(st.button("Volver")):
-            st.session_state.page=varAux.auxPage
+            print("XD")
+            st.session_state.page = varAux.auxPage
+            st.session_state.page = varAux.auxPage
         genFooter()
