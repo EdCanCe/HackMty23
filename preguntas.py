@@ -13,10 +13,10 @@ st.text_input("Dirección actual")
 st.number_input("¿Cuánto dinero ganas?") # Para insertar numero
 
 # Preguntas de opción múltiple
-st.radio("¿Su objetivo principal de inversión es a ?", ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], label_visibility="hidden")
-
-st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?", ["Bajo", "Moderado", "Alto"], label_visibility="hidden")
-
+ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], index = None, horizontal = True)
+st.text("Tu objetivo principal es:", ObjetivoPrincipal)
+Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?", ["Bajo", "Moderado", "Alto"], index = None, horizontal = True)
+st.text("El nivel de riego que seleccionaste fue:", Riesgo)
 st.number_input("¿Cuánto es su ingreso mensual?")
 st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
 
@@ -24,5 +24,6 @@ st.number_input("¿Cuánto es su ingreso anual?")
 st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
 
 # Preguntas de varias opciones
-st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia"])
-st.text_input('Otros')
+metaInversion = st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
+if metaInversion == "Otro":
+    st.text_input('Ingresa los otros')
