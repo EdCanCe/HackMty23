@@ -1,4 +1,5 @@
 import streamlit as st
+import DataBase as db
 
 st.set_page_config(page_title= "Datos del usuario", layout= "wide")
 
