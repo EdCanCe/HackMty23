@@ -1,5 +1,5 @@
 import streamlit as st
-import DataBase as db
+#import DataBase as db
 st.set_page_config(page_title= "Datos del usuario", layout= "wide")
 
 st.text_input("Nombre(s)") # Para insertar texto
