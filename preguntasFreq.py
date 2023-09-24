@@ -31,3 +31,29 @@ st.text_area("Diversificación: ","Podrás diversificar tu dinero de acuerdo con
              "así minimizas el riesgo e incertidumbre")
 st.text_area("Flexibilidad: ","Encontrarás diferentes opciones que se acomoden a tus necesidades y objetivos.")
 
+st.subhead("¿A partir de cuánto dinero puedo empezar a invertir?")
+st.text_area("A partir de $100 pesos ","La inversión inicial es dependiendo del Fondo a contratar y en cualquier "
+            "momento puedes incrementarlo para generar mayores ganancias.")
+
+st.subhead("¿Existe algún riesgo de perder parte de mi inversión en Fondos?")
+st.text_area("Todas las inversiones tienen riesgo asociado", "Puede ser desde extremadamente bajo hasta alto, "
+            "en general los Fondos con menor rendimiento esperado tienen menor riesgo " 
+            "y viceversa. Depende directamente del tipo de activos que conforman la cartera del Fondo")
+
+st.subhead("¿Mis rendimientos generan algún tipo de impuesto?")
+st.text_area("Sí","Por ley todas las inversiones generan impuestos. "
+             "Sin embargo, al recibir tus ganancias ya serán libres de impuestos.")
+
+st.subhead("¿Puedo comprar más de un Fondo?")
+st.text_area("Sí","Tu contrato de Fondos te permite invertir en todos los Fondos que te interesen y "
+            "se ajusten a tu perfil como inversionista. " 
+            "Es recomendable diversificar entre corto, mediano y largo plazo.")
+
+st.subhead("¿Por cuánto tiempo debo de mantener mi inversión?")
+st.text_area("Una ventaja de los Fondos es que no hay un plazo o tiempo obligado, sin embargo, "
+            "existe un tiempo recomendado llamado horizonte de inversión, "
+            "para mantener lo invertido y así lograr optimizar los rendimientos.")
+
+st.subhead("¿Qué tipo de Fondos existen?")
+st.text_area("Existen varios: " "Fondos de Deuda, de Renta Variable, "
+             "Mixtos (Renta Fija y Variable), de Cobertura, entre otros.")
