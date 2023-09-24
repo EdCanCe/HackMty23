@@ -31,13 +31,13 @@ Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inver
 IngMensual = st.number_input("¿Cuánto es su ingreso mensual?")
 
 
-InvMensual = st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
+InvMensual = st.number_input("¿Cuánto dinero planeas invertir mensualmente sin afectar tu calidad de vida actual?")
 
 
 IngAnual = st.number_input("¿Cuánto es su ingreso anual?")
 
 
-InvAnual = st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
+InvAnual = st.number_input("¿Cuánto dinero planeas invertir anualmente sin afectar tu calidad de vida actual?")
 
 
 # Preguntas de varias opciones
@@ -69,7 +69,7 @@ if(st.button("Continuar")):
     st.write(IngAnual)
     st.write(InvAnual)
     st.write(metaInversion)
-    if "Otro" in metaInversion:
-        st.write(OtroMeta)
+    if "Otro" != "":
+        metaInversion = metaInversion + OtroMeta
     st.write(Necesidades)
     st.write(Gustos)
