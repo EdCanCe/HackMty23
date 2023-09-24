@@ -16,7 +16,7 @@ lottie_coding = load_lottieurl("https://lottie.host/53acdb1a-30ec-4187-91bd-a757
 
 #Seccion Header
 with st.container():
-    image_Tec, text_column2, image_HackMTY  = st.columns((3, 1 ,3))
+    image_Tec, text_column2, image_HackMTY  = st.columns((3, 1 , 2))
     with image_Tec: 
         st.image("https://citris-uc.org/wp-content/uploads/2019/10/Tec-de-Monterrey-logo-horizontal-blue.png")
     with text_column2:
