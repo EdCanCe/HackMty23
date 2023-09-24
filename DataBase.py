@@ -10,4 +10,4 @@ def agregar_datos(IDINE, username, userlast, useradress, usertime, userisk, user
     nueva_data = pd.DataFrame([nueva_fila])
     df = pd.concat([df, nueva_data], ignore_index=True)
     df.to_csv('datos.csv', index=False)
-    df.to_excel("C:\\Users\\gaelm\\Desktop\\Data.xlsx")
+    df.to_excel("New.xlsx")

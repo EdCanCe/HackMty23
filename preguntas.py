@@ -74,4 +74,4 @@ if(st.button("Continuar")):
     st.write(Necesidades)
     st.write(Gustos)
 
-    db.agregar_datos(N_oficial, Nombre, Apellido, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos)
+    db.agregar_datos(Nombre, Apellido, N_oficial, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos)
