@@ -16,13 +16,13 @@ lottie_coding = load_lottieurl("https://lottie.host/53acdb1a-30ec-4187-91bd-a757
 
 #Seccion Header
 with st.container():
-    image_Tec, image_Banorte, image_HackMTY  = st.columns((2))
+    image_Tec, image_Banorte, image_HackMTY  = st.columns((2, 2, 2))
     with image_Tec: 
         st.image("https://citris-uc.org/wp-content/uploads/2019/10/Tec-de-Monterrey-logo-horizontal-blue.png", width = 300)
     with image_HackMTY:     
         st.image("https://th.bing.com/th/id/OIP.bD70SkJLNjIoODY7YK_VnAHaFE?pid=ImgDet&rs=1", width = 200)
     with image_Banorte:
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png", width = 300)
+        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png", width = 3a00)
    
     st.title("Presentacion")
     st.write("BLa blablablalbala")
