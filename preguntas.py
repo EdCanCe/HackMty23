@@ -61,7 +61,7 @@ Gustos = st.number_input("¿Cuánto gastas en gustos (compras de impulso, innece
 
 
 if(st.button("Continuar")):
-    if(db.agregar_datos(N_oficial, Nombre, Apellido, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos) == 1):
+    if(db.agregar_datos(N_oficial, Nombre, Apellido, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos) == True):
         st.write("YA EXISTE LA CUENTA")
     else:
         st.write("Iniciando sesión")

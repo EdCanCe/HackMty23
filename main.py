@@ -46,6 +46,7 @@ def genFooter():
  - Gael Cumplido Mendoza
  - Edgar Andrey Balvaneda Castillón
  - Edmundo Canedo Cervantes
+                
 Estudiantes del Tecnológico de Monterrey Campus Guadalajara
 ''')
     
