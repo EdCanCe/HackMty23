@@ -9,11 +9,11 @@ with st.container():
     with image_HackMTY:     
         st.image("https://th.bing.com/th/id/OIP.bD70SkJLNjIoODY7YK_VnAHaFE?pid=ImgDet&rs=1")
     text_column1, image_Banorte, text_column3  = st.columns((3))
-    with text_column1
+    with text_column1:
         st.text("Caca") 
-    with image_Banorte
+    with image_Banorte:
         st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Logo_de_Banorte.svg/2560px-Logo_de_Banorte.svg.png")
-    with text_column3
+    with text_column3:
         st.text("Pedo")
     
     st.title("Presentacion")
