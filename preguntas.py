@@ -74,4 +74,7 @@ if(st.button("Continuar")):
     st.write(Necesidades)
     st.write(Gustos)
 
-    db.agregar_datos(Nombre, Apellido, N_oficial, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos)
+    if(db.agregar_datos(N_oficial, Nombre, Apellido, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos) == 1):
+        st.write("YA EXISTE LA CUENTA")
+    else:
+        st.write("Iniciando sesión")
