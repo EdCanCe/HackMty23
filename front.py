@@ -12,7 +12,7 @@ with st.container():
     st.write("bye ola")
 
 with st.container():
-    st.write("---"):
+    st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
         st.header("Que se hace")
