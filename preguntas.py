@@ -24,7 +24,7 @@ Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inver
 )
 st.write("El nivel de riesgo que seleccionaste fue:", Riesgo)
 
-st.number_input("¿Cuánto es su ingreso mensual?")
+mensual = st.number_input("¿Cuánto es su ingreso mensual?")
 st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
 
 st.number_input("¿Cuánto es su ingreso anual?")
@@ -42,3 +42,6 @@ if "Otro" in metaInversion:
 st.number_input("¿Cuánto gastas en necesidades (comida, servicios básico, agua, entre otros) al mes?")
 
 st.number_input("¿Cuánto gastas en gustos (compras de impulso, innecesarios, vicios, entre otros) al mes?")
+
+if(st.button("Continuar")):
+    st.write(mensual)
