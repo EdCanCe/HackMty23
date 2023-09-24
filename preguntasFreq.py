@@ -4,7 +4,6 @@ st.set_page_config(page_title= "Preguntas frecuentes", layout= "wide")
 st.title('Preguntas frecuentes en Banorte')
 
 st.subheader("¿Qué es un fondo de inversión?")
-st.markdown(""" - [[\"¿Qué es un fondo de inversión?\"]]""")
 st.text_area("Fondos de Inversión","Son una excelente forma para obtener rendimientos "
             "de tus ahorros. Su función principal es captar, invertir y administrar los recursos "
             "de clientes como tú para invertirlos en distintos instrumentos financieros "
