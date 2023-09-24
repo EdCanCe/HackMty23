@@ -33,7 +33,6 @@ st.number_input("¿Cuánto es su ingreso anual?")
 st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
 
 # Preguntas de varias opciones
-#metaInversion = 
-print(st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"]))
-#if metaInversion == "Otro":
-    #st.text_input('Ingresa los otros')
+metaInversion = st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
+if "Otro" in metaInversion:
+    st.text_input('Ingresa los otros')
