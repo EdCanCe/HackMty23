@@ -1,9 +1,11 @@
 import pandas as pd
 
-d = pd.read_excel("C:\\Users\\gaelm\\Desktop")
+d = pd.read_excel("New.xlsx")
 df = pd.DataFrame(d)
 print(df)
 
+
+    
 """IDINE = ["C13"]
 username = ["Mario"]
 lastname = ["Feng Wu"]
@@ -23,8 +25,8 @@ df["UserTime"] = usertime
 df["Userisk"] = userisk
 
 print(df)
-
-df.to_excel("C:\\Users\\gaelm\\Desktop\\Data.xlsx")"""
+"""
+df.to_excel("C:\\Users\\gaelm\\Desktop\\Data.xlsx")
 
 #with pd.ExcelWriter("Output.xlsx") as writer:
 #df.to_excel(writer, sheet_name= "Prueba")
