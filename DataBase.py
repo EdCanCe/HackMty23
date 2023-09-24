@@ -1,6 +1,6 @@
 import pandas as pd
 
-d = pd.read_excel("C:\Users\gaelm\Desktop")
+d = pd.read_excel("C:\\Users\\gaelm\\Desktop")
 df = pd.DataFrame(d)
 print(df)
 
