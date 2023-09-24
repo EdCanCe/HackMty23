@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title= "Datos del usuario", layout= "wide")
 
-st.text_input("Nombre(s)")
+st.text_input("Nombre(s)") # Para insertar texto
 
 st.text_input("Apellido(s)")
 
@@ -10,10 +10,27 @@ st.text_input("Número de identificación oficial")
 
 st.text_input("Dirección actual")
 
-st.number_input("¿Cuánto dinero ganas?")
+st.number_input("¿Cuánto dinero ganas?") # Para insertar numero
 
-st.radio('Pick one:', ['nose','ear'])
+# Preguntas de opción múltiple
+ObjetivoPrincipal = st.radio("¿Su objetivo principal de inversión es a ?", 
+                             ["Corto plazo (1-3 años)", "Mediano plazo (3-5 años)" , "Largo plazo (más de 5 años)"], 
+                             index = None, horizontal = True,
+                             )
+st.text("Tu objetivo principal es:", ObjetivoPrincipal)
 
-st.radio("¿Su objetivo principal de inversión es a ?", ["corto plazo (1-3 años)", "mediano plazo (3-5 años)" , "largo plazo (más de 5 años)"])
+Riesgo = st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?",
+                   ["Bajo", "Moderado", "Alto"], 
+                   index = None, horizontal = True,
+                   )
+st.text("El nivel de riego que seleccionaste fue:", Riesgo)
+st.number_input("¿Cuánto es su ingreso mensual?")
+st.number_input("¿Cuánto dinero planea invertir mensualmente sin afectar su calidad de vida actual?")
 
-st.radio("¿Qué nivel de riesgo estás dispuesto a asumir en sus inversiones?", ["bajo", "moderado", "alto"])
+st.number_input("¿Cuánto es su ingreso anual?")
+st.number_input("¿Cuánto dinero planea invertir anualmente sin afectar su calidad de vida actual?")
+
+# Preguntas de varias opciones
+metaInversion = st.multiselect("¿Cuáles son tus metas de inversión", ["Casa", "Coche", "Retiro", "Educación de sus hijos", "Vacaciones", "Deudas", "Fondos de emergencia", "Otro"])
+if metaInversion == "Otro":
+    st.text_input('Ingresa los otros')
