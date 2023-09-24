@@ -11,7 +11,7 @@ def load_lottieurl(url):
     return r.json()
 
 #------Agregar valores-------
-lottie_coding = load_lottieurl("https://lottie.host/60707005-ac51-4186-bf8d-ec558648f6e2/GUWk8gO9eR.json")
+lottie_coding = load_lottieurl("https://lottie.host/53acdb1a-30ec-4187-91bd-a757253236f2/9DMM2U7ryH.json")
 
 
 #Seccion Header
