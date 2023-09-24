@@ -1,6 +1,8 @@
 import streamlit as st
 import DataBase as db
-st.set_page_config(page_title= "Datos del usuario", layout= "wide")
+
+
+pagina = st.set_page_config(page_title= "Datos del usuario", layout= "wide")
 
 Nombre = st.text_input("Nombre(s)") # Para insertar texto
 
@@ -59,21 +61,6 @@ Gustos = st.number_input("¿Cuánto gastas en gustos (compras de impulso, innece
 
 
 if(st.button("Continuar")):
-    st.write(Nombre)
-    st.write(Apellido)
-    st.write(N_oficial)
-    st.write(ObjetivoPrincipal)
-    st.write(Riesgo)
-    st.write(IngMensual)
-    st.write(InvMensual)
-    st.write(IngAnual)
-    st.write(InvAnual)
-    st.write(metaInversion)
-    if "Otro" in metaInversion:
-        st.write(OtroMeta)
-    st.write(Necesidades)
-    st.write(Gustos)
-
     if(db.agregar_datos(N_oficial, Nombre, Apellido, Direccion, ObjetivoPrincipal, Riesgo, IngMensual, InvMensual, IngAnual, InvAnual, metaInversion, OtroMeta, Necesidades, Gustos) == 1):
         st.write("YA EXISTE LA CUENTA")
     else:
